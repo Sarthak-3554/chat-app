@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Sarthak-3554.github.io/chat-app",
   "name": "chat-app",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +10,7 @@
     "axios": "^0.28.1",
     "buffer": "^6.0.3",
     "emoji-picker-react": "^3.5.1",
+    "gh-pages": "^6.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
@@ -21,6 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
